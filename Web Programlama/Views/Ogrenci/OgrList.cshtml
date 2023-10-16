@@ -1,0 +1,36 @@
+﻿@model List<Ogrenci>
+
+<h2 style="color: purple">Ogr Kaydedildi</h2>
+
+<table width="70%" class=" table table-active ">
+
+	<tr>
+		<td>
+			AD
+		</td>
+		<td>
+			SOYAD
+		</td>
+		<td>
+			NO
+		</td>
+
+	</tr>
+	@foreach (var ogrenci in Model)
+	{
+		<tr>
+			<td>
+				@ogrenci.OgrAd
+			</td>
+			<td>
+				@ogrenci.OgrSoyad
+			</td>
+			<td>
+				@ogrenci.OgrNo
+			</td>
+		</tr>
+	}
+	
+
+
+</table>
